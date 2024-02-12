@@ -4,6 +4,7 @@ import ChildComponent from "./components/Children-function-pattern/ChildComponen
 import MainCounts from "./components/Children-function-pattern/MainCounts";
 import Counts from "./components/Counts";
 import MainComponent from "./components/memo-children/MainComponent";
+import ParentButton from "./components/render-props/ParentButton";
 
 function App() {
   const [state, setState] = useState();
@@ -35,6 +36,9 @@ function App() {
 
       {/* ----------------------------Memo-children--------------------------------------- */}
       <MainComponent />
+
+      {/* -------------------------------Render Props---------------------------------------- */}
+      <ParentButton />
     </div>
   );
 }
